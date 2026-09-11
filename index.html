@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Putuj s nama</title>
+        <link href="style.css"rel="stylesheet">
+        <script src="skripta.js"></script>
+        <script>
+            function prikaziPoruku(){
+            alert("Bok!Dobro došli u našu agenciju.");
+            document.write("Planirajte putovanje iz snova");
+            }
+        </script>
+        <script>
+            function zamjeniBoju(){
+                document.body.style.backgroundColor="lightblue";
+            }
+        </script>
+        <script>
+            function pokaziPoruku(){
+                alert("Dobro si kliknuo!");
+            }
+        </script>
+        <script>
+            function pokaziPoruku(){
+                 alert("Hej, Ana Anić! Dobro došli u našu agenciju.");
+            }
+        </script>
+    </head>
+    <body>
+        <a href="#"onclick="zamjeniBoju()">Promjeni boju</a>
+        <a href="#"onclick="prikaziPoruku()">Klikni ovdje</a>
+        <script>
+
+            let korisnik=promt("Unesite ime i prezime;");
+            pozdrav(korisnik);
+           
+        </script>
+      <h1>Dobrodošli u moju putnu agenciju</h1>
+      <br>
+      <p>Naša agencija se bavi putovanjima širom svijeta.<br>
+         Ako želite proputzovati svijet, pođite sa nama.</p>
+    </body>
+</html>

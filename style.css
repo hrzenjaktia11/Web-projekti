@@ -1,0 +1,10 @@
+h1, p{
+    color:black;
+}
+h1{
+    text-align:center;
+    background-color:orange;
+}
+body{
+    background-color: beige;
+}
