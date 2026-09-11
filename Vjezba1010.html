@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba sa slikama</title>
+    <link href="vjezba1010.css"rel="stylesheet">
+</head>
+<body>
+
+    <h1>ROLLOVER i efekti</h1>
+
+    <div class="gallery">
+        <img src="https://life-decor.com/cdn/shop/products/zidne-slike-moderne_554b157a-2613-45c0-9c24-fbf7f2829f0d.jpg?v=1623409107&width=2048" alt="Priroda 1">
+
+        <img src="https://as2.ftcdn.net/v2/jpg/03/20/60/61/1000_F_320606199_7RTvLZ9teuYLi3cXAt4jxIoxsNuabPTY.jpg" alt="Priroda 2" class="rollover-img">
+
+
+        <img id="swapImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6W1-dOZlAr6XNwqILvi4_L6W_OrbfyaXXWy6SkVfsvw&s=10" alt="Slika za zamjenu">
+    </div>
+
+    <script>
+        const slikaZaZamjenu = document.getElementById('swapImage');
+
+        const prvaSlika = "https://picsum.photos/id/1018/300/200";
+        const zamjenskaSlika = "https://picsum.photos/id/1025/300/200";
+
+        slikaZaZamjenu.addEventListener('click', function() {
+            if (slikaZaZamjenu.src.includes("1018")) {
+                slikaZaZamjenu.src = zamjenskaSlika;
+            } else {
+                slikaZaZamjenu.src = prvaSlika;
+            }
+        });
+    </script>
+
+</body>
+</html>
